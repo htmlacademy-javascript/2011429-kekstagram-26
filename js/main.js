@@ -9,7 +9,7 @@ function getRandomInteger(min, max) {
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
-  throw new Error('Задан неверный интервал чисел');
+  return 'Задан неверный интервал чисел';
 }
 getRandomInteger(0, 2);
 
