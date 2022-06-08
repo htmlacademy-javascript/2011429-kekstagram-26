@@ -9,7 +9,7 @@ function getRandomInteger(min, max) {
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
-  console.log('Задан неверный интервал чисел'); // Почему выдается ошибка при записи console.log?
+  throw new Error('Задан неверный интервал чисел');
 }
 getRandomInteger(0, 2);
 
